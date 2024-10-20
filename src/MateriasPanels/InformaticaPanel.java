@@ -5,10 +5,7 @@
 package MateriasPanels;
 
 import Formularios.MainPage;
-import java.awt.CardLayout;
-import java.awt.Point;
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
+
 /**
  *
  * @author IanDa
@@ -78,16 +75,16 @@ public class InformaticaPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // Get a reference to the MainPage frame
-    MainPage mainFrame = (MainPage) javax.swing.SwingUtilities.getWindowAncestor(this);
+       // toma una referencia del MainPage frame
+        MainPage mainFrame = (MainPage) javax.swing.SwingUtilities.getWindowAncestor(this);
 
-    // Check if the ancestor is indeed an instance of MainPage
-    if (mainFrame != null) {
+        //Checa si el ancestro es en efecto, el MainPage Frame
+           if (mainFrame != null) {
         mainFrame.menuPrincipal();
-    } else {
-        // Handle the case where the ancestor is not found
-        System.err.println("MainPage frame not found.");
-    }
+            } else {
+        // toma la excepcion si el ancestro no es encontrado
+        System.err.println("MainPage frame no encontrado.");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
